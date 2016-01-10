@@ -1,0 +1,5 @@
+CSHLDAP
+Flask
+configparser
+python-ldap
+twilio
