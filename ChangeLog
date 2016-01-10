@@ -1,0 +1,11 @@
+CHANGES
+=======
+
+* change phone # formatting
+* add dependencies
+* more debug logging
+* update readme
+* Implemented RTP Pinging Via SMS
+* update
+* init demo
+* Initial commit
