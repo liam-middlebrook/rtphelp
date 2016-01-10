@@ -47,6 +47,8 @@ def hello_monkey():
 
     # Check That Request Is Coming From Twilio
     if request.form['AccountSid'] != account_sid:
+        print("Error: User Not Twilio!")
+        print(request.form)
         return "Error: You Don't Appear to Be Twilio!"
 
     # Pick a Random Active RTP to Bother
@@ -64,6 +66,8 @@ def hello_monkey():
             sender_exists = True
             break
     if not sender_exists:
+        print("Error: User Not In LDAP!")
+        print(sender)
         resp = twilio.twiml.Response()
         resp.message("Error: You Have Not Registered Your Phone in LDAP!")
         return str(resp)
